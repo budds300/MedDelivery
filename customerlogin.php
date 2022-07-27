@@ -35,7 +35,7 @@ include 'nav.php'
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6 col-md-offset-4 pt-5">
-          <label style="margin-left: 5px;color: red;"><span> <?php echo $error;  ?> </span></label>
+          <label style="margin-left: 5px;color: red;"><span> <?php echo $error, $password;  ?> </span></label>
         <div class="panel panel-primary">
           <div class="panel-heading"> Login </div>
           <div class="panel-body">

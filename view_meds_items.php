@@ -32,11 +32,11 @@ require "./nav.php";
     <div class="offcanvas-body">
       <div class="list-group list-group-flush pt-5">
         <a href="mystore.php" class="list-group-item  btn-primary ">My Store</a>
-        <a href="view_meds_items.php" class="list-group-item btn-primary ">View Medicine Items</a>
+        <a href="view_meds_items.php" class="list-group-item active btn-primary ">View Medicine Items</a>
         <a href="add_meds_items.php" class="list-group-item btn-primary ">Add Medicine Items</a>
         <a href="edit_meds_items.php" class="list-group-item btn-primary ">Edit Medicine Items</a>
         <a href="delete_meds_items.php" class="list-group-item btn-primary ">Delete Medicine Items</a>
-        <a href="view_order_details.php" class="list-group-item active btn-primary ">View Order Details</a>
+        <a href="view_order_details.php" class="list-group-item  btn-primary ">View Order Details</a>
       </div>
     </div>
 </div>

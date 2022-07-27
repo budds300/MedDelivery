@@ -22,9 +22,9 @@ if(isset($_GET['id'])){
   $id=$_GET['id'];
   $sql= "SELECT * from track where order_Id='$id' ORDER BY date DESC";
   $res= mysqli_query($conn,$sql);
-  if($count=mysqli_fetch_row($res)>0){
+  if($count=mysqli_num_rows($res)>0){
   ?>
-  <div class="container">
+  <div class="container pt-5 mt-5">
     <div class="table-responsive" style="padding-left: 100px; padding-right: 100px;" >
 <table class="table table-striped" style="margin: 20px 0;">
   <thead class="thead-dark">

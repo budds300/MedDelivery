@@ -14,7 +14,7 @@ include 'nav.php';
 
     <div class="container">
     <div class="jumbotron mt-5">
-     <h1>Hi Guest, <br> Welcome to <span class="edit"> Beta Furniture' </span></h1>
+     <h1>Hi Guest, <br> Welcome to <span class="edit"> MedDelivery' </span></h1>
      <br>
    <p>Get started by creating your account</p>
     </div>

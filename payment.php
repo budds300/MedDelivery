@@ -48,7 +48,7 @@ $gtotal = 0;
       if(!$success)
       {
         ?>
-        <div class="container">
+        <div class="container pt-5 mt-5">
           <div class="jumbotron">
             <h1>Something went wrong!</h1>
             <p>Try again later.</p>
@@ -61,7 +61,7 @@ $gtotal = 0;
   }
 
         ?>
-        <div class="container">
+        <div class="container mt-5">
           <div class="jumbotron">
             <h1>Choose your payment option</h1>
           </div>

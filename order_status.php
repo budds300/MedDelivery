@@ -35,7 +35,7 @@ $user_check=$_SESSION['login_user2'];
 $sql="SELECT * from orders  where username='$user_check' ORDER BY order_ID DESC";
 // $sql="SELECT * from track t where t.order_Id in (select order_ID from orders where username='$user_check') ORDER BY order_Id DESC";
 $result=mysqli_query($conn,$sql);
-if($count=mysqli_fetch_row($result)>0){
+if($count=mysqli_num_rows($result)>0){
     while($row=mysqli_fetch_assoc($result)){
         $order_number=$row['order_ID'];
         $name=$row['name'];

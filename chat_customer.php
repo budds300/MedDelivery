@@ -83,10 +83,10 @@ div.callout {
 	bottom: -20px;
 	border-top: 10px solid #444;
 }
-/* .chat-box{
+.chat-box{
     overflow-y: auto;
     overflow-x: hidden;
-} */
+}
 </style>
 <section class="pt-3 mt-3">
     <div class="row">

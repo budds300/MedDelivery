@@ -1,6 +1,7 @@
 <?php
 session_start(); 
 $error=''; 
+$password="";
 
 if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
@@ -10,8 +11,9 @@ else
 {
 // Define $username and $password
 $username=$_POST['username'];
-$password=$_POST['password'];
-$pwdHash=password_hash($password,PASSWORD_DEFAULT);
+$password = $_POST['password'];
+
+
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
 require 'connection.php';
 $conn = Connect();
@@ -32,6 +34,7 @@ if ($stmt->fetch())
 	header("location: medslist.php"); // Redirecting To Other Page
 } else {
 $error = "Username or Password is invalid";
+
 }
 mysqli_close($conn); // Closing Connection
 }

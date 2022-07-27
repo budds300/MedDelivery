@@ -1,6 +1,6 @@
 const form =document.querySelector(".typin-area"),
 inputField = form.querySelector(".input-field"),
-chatBox = document.querySelector(".chat-box"),
+chatBox = document.querySelector("#chat-box"),
 sendBtn= form.querySelector("button");
 
 form.onsubmit = (e)=>{

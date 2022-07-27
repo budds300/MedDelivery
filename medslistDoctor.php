@@ -25,17 +25,28 @@ include 'nav.php'
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active"style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),url('./images/anton-8q-U8X1zkvI-unsplash.jpg');height:100vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
+        <div class="carousel-item active"style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0.4)),url('./images/anton-8q-U8X1zkvI-unsplash.jpg');height:80vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
         <h1 class="text-white text-center" style="padding-top: 300px;"> Welcome to MedDelivery system</h1>
           <h5 class="text-white text-center"> A service dedicated to serve our Clients needs.</h5>
           <h5 class="text-white text-center"> Scroll down to make your order.</h5>
         </div>
-        <div class="carousel-item "style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),url('./images/jacqueline-munguia-1pAwJiCD60c-unsplash.jpg');height:100vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
+        
+        <div class="carousel-item "style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)),url('https://images.unsplash.com/photo-1632054229892-21103035a686?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');height:85vh;background-size:cover;background-position:top;background-repeat:no-repeat;" height="">
         <h1 class="text-white text-center" style="padding-top: 300px;"> Welcome to MedDelivery system</h1>
           <h5 class="text-white text-center"> A service dedicated to serve our Clients needs.</h5>
           <h5 class="text-white text-center"> Scroll down to make your order.</h5>
-        </div>
-        <div class="carousel-item "style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),url('./images/national-cancer-institute-701-FJcjLAQ-unsplash.jpg');height:100vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
+       </div>
+        <!-- <div class="carousel-item "style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),url('./images/national-cancer-institute-701-FJcjLAQ-unsplash.jpg');height:85vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
+        <h1 class="text-white text-center" style="padding-top: 300px;"> Welcome to MedDelivery system</h1>
+          <h5 class="text-white text-center"> A service dedicated to serve our Clients needs.</h5>
+          <h5 class="text-white text-center"> Scroll down to make your order.</h5>
+       </div>
+        <div class="carousel-item "style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),url('https://images.unsplash.com/photo-1617881770125-6fb0d039ecde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=85');height:85vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
+        <h1 class="text-white text-center" style="padding-top: 300px;"> Welcome to MedDelivery system</h1>
+          <h5 class="text-white text-center"> A service dedicated to serve our Clients needs.</h5>
+          <h5 class="text-white text-center"> Scroll down to make your order.</h5>
+       </div> -->
+        <div class="carousel-item "style="background-image: linear-gradient(rgba(0,0,0,0.35),rgba(0, 0, 0, 0.35)),url('https://images.unsplash.com/photo-1609188076864-c35269136b09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');height:85vh;background-size:cover;background-position:center;background-repeat:no-repeat;" height="">
         <h1 class="text-white text-center" style="padding-top: 300px;"> Welcome to MedDelivery system</h1>
           <h5 class="text-white text-center"> A service dedicated to serve our Clients needs.</h5>
           <h5 class="text-white text-center"> Scroll down to make your order.</h5>
@@ -73,7 +84,7 @@ if (mysqli_num_rows($result) > 0)
 ?>
 <div class="col-md-4  ">
 
-<div class="card mt-4"style="">
+<div class="card mt-4"style=""   data-aos="fade-left">
   <form method="post" action="cart.php?action=add&id=<?php echo $row["D_ID"]; ?>">
   <div class="row" align="center";>
     

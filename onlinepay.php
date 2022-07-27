@@ -130,7 +130,7 @@ $gtotal = $gtotal + $total;
 <?php 
 if(isset($_POST['submit'])){
 
-    $amount = '100'; //Amount to transact 
+    $amount = $gtotal; //Amount to transact 
     $phonenumber = $_POST['phone-number']; // Phone number paying
     
     $Account_no = '123456'; // Enter account number optional
@@ -161,7 +161,8 @@ if(isset($_POST['submit'])){
         echo '<script>window.location="COD.php"</script>';
         // echo "WAIT FOR  STK POP UP🔥";
       } else {
-        echo "Transaction Failed";
+        echo'<script>alert("Transaction failed")</script>';
+        echo '<script>window.location="payment.php"</script>';
        
       }
 }

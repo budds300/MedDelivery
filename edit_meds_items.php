@@ -84,8 +84,8 @@ require './nav.php';
 
     
     
-
-<div class="col-xs-3">
+<div class="row">
+<div class="col-xs-3 col-md-3">
 
   <div class="form-area" style="padding: 10px 10px 110px 10px; ">
   
@@ -107,7 +107,7 @@ require './nav.php';
     name='$name', price='$price',
     description='$description' where D_ID='$F_ID'");
     }
-    $query = mysqli_query($conn, "SELECT * FROM drugs d WHERE d.S_ID IN (SELECT d.S_ID FROM stores s WHERE s.M_ID='$user_check')AND options='ENABLE' ORDER BY D_ID");
+    $query = mysqli_query($conn, "SELECT * FROM drugs d WHERE d.options = 'ENABLE' AND d.S_ID IN (SELECT s.S_ID FROM stores s WHERE s.M_ID='$user_check') ORDER BY D_ID ");
     while ($row = mysqli_fetch_array($query)) {
 
       ?>
@@ -136,8 +136,9 @@ require './nav.php';
 
 
 
-<div class="container">
-<div class="col-md-6">
+
+<div class="col-md-6 offset-md-3">
+
  <div class="form-area" style="padding: 0px 100px 100px 100px;">
         <form action="edit_meds_items.php" method="GET">
         <br style="clear: both">
@@ -171,6 +172,7 @@ require './nav.php';
 }
   ?>   
   </div>
+</div>
 </div>
 
 

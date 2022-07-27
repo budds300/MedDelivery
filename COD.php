@@ -19,7 +19,7 @@ unset($_SESSION["cart"]);
 
 
 
-        <div class="container">
+        <div class="container mt-5">
           <div class="jumbotron">
             <h1 class="text-center" style="color: green;"><span class="glyphicon glyphicon-ok-circle"></span> Order Placed Successfully.</h1>
           </div>

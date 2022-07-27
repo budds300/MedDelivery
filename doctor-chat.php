@@ -16,18 +16,18 @@ $you="";
 elseif (mysqli_num_rows($res)>0){
     while($row =mysqli_fetch_assoc($res) ){
         $username=$row['username'];
-        $sql2= "SELECT *from message where incoming_id='$username' OR outgoing_id='$username' AND outgoing_id='$outgoing' or incoming_id='$username' order by id desc limit 1";
+        $sql2= "SELECT *from message where incoming_id='$username'  AND outgoing_id='$outgoing ' or outgoing_id='$username ' and incoming_id='$outgoing'  order by id desc limit 1";
         $res2=mysqli_query($conn,$sql2);
         
         $row2=mysqli_fetch_assoc($res2);
-            if( mysqli_num_rows($res2)>0){
-                $result=$row2['message'];
-                ( $outgoing== $row2['outgoing_id'])?$you="You: ":$you="";
+        if( mysqli_num_rows($res2)>0){
+            $result=$row2['message'];
+            ( $outgoing== $row2['outgoing_id'])?$you="You: ":$you=" ";
                 
-        }
-        else {$result= "No message Available";}
-        // Triming the message if its more than 28
-        (strlen($result)>28)? $msg = substr($result,0,28): $msg =$result;
+            }
+            else {$result= "No message Available";}
+            // Triming the message if its more than 28
+            (strlen($result)>33)? $msg = substr($result,0,33): $msg =$result;
         
       
          
